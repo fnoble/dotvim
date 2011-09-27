@@ -13,6 +13,7 @@ set magic
 set wrap linebreak
 set visualbell t_vb=
 filetype plugin on
+set incsearch
 
 " Tab / indentation settings
 set tabstop=2
@@ -36,11 +37,18 @@ set guioptions-=l
 set guioptions-=b
 set gfn=Anonymous\ Pro\ 12
 
-set incsearch
-
 " Pathogen initialisation
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+
+" Nice tab completion on command line
+set wildchar=<Tab> wildmenu wildmode=full
+
+" MiniBuffExplorer key mapping - <Ctrl>hjkl to move buffers etc.
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
 
 " Ack settings for Ubuntu (ack-grep instead of ack)
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
