@@ -7,3 +7,6 @@
 [submodule "bundle/NERDCommenter"]
 	path = bundle/NERDCommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/vim-latex"]
+	path = bundle/vim-latex
+	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
