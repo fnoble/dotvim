@@ -42,3 +42,6 @@ set incsearch
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" Ack settings for Ubuntu (ack-grep instead of ack)
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
