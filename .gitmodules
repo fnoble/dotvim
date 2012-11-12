@@ -13,3 +13,6 @@
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/trailing-whitespace"]
+	path = bundle/trailing-whitespace
+	url = https://github.com/bronson/vim-trailing-whitespace.git
