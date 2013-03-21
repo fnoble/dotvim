@@ -14,6 +14,7 @@ set wrap linebreak
 set visualbell t_vb=
 filetype plugin on
 set incsearch
+set hlsearch
 
 " Tab / indentation settings
 set tabstop=2
