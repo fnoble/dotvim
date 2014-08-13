@@ -41,6 +41,12 @@ set guioptions-=l
 set guioptions-=b
 set gfn=Anonymous\ Pro\ 12
 
+" Nice tab completion on command line
+set wildchar=<Tab> wildmenu wildmode=full
+
+" Ack settings for Ubuntu (ack-grep instead of ack)
+"let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
 " To disable a plugin, add it's bundle name to the following list
 let g:pathogen_disabled = []
 
@@ -51,21 +57,11 @@ call add(g:pathogen_disabled, 'minibufexpl')
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-" Nice tab completion on command line
-set wildchar=<Tab> wildmenu wildmode=full
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
 let g:Tex_TreatMacViewerAsUNIX = 1
 let g:Tex_ViewRule_pdf = 'open -a Skim'
 
-" MiniBuffExplorer key mapping - <Ctrl>hjkl to move buffers etc.
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
-
-" Ack settings for Ubuntu (ack-grep instead of ack)
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 " Avoid freezing on offending code
 "let g:clang_user_options='|| exit 0'
 let g:clang_close_preview=1
