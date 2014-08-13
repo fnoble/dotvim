@@ -53,4 +53,13 @@ let g:miniBufExplModSelTarget = 1
 
 " Ack settings for Ubuntu (ack-grep instead of ack)
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+" Avoid freezing on offending code
+"let g:clang_user_options='|| exit 0'
+let g:clang_close_preview=1
+let g:clang_snippets=1
+let g:clang_conceal_snippets=1
+" conceal in insert (i), normal (n) and visual (v) modes
+set concealcursor=inv
+ " hide concealed text completely unless replacement character is defined
+set conceallevel=2
 
