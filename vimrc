@@ -41,6 +41,12 @@ set guioptions-=l
 set guioptions-=b
 set gfn=Anonymous\ Pro\ 12
 
+" To disable a plugin, add it's bundle name to the following list
+let g:pathogen_disabled = []
+
+" MBE is hella slow, apparently fixed in 6.5 so try it again after release.
+call add(g:pathogen_disabled, 'minibufexpl')
+
 " Pathogen initialisation
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
