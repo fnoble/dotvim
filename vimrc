@@ -53,6 +53,10 @@ call pathogen#helptags()
 
 " Nice tab completion on command line
 set wildchar=<Tab> wildmenu wildmode=full
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
+let g:Tex_TreatMacViewerAsUNIX = 1
+let g:Tex_ViewRule_pdf = 'open -a Skim'
 
 " MiniBuffExplorer key mapping - <Ctrl>hjkl to move buffers etc.
 let g:miniBufExplMapWindowNavVim = 1
