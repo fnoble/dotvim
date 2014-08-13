@@ -32,6 +32,9 @@ set showmatch
 set background=dark
 colorscheme jellybeans
 
+let &colorcolumn=join(range(81,999),",")
+autocmd ColorScheme * highlight ColorColumn ctermbg=235 guibg=#202020
+
 " GUI settings
 set guioptions-=T
 set guioptions-=l
